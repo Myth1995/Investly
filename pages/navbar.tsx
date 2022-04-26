@@ -2,32 +2,9 @@ import type { NextPage } from 'next'
 import styles from '../styles/Navbar.module.css'
 import 'w3-css/w3.css'
 import items from './navitems'
-import Modal from '@mui/material/Modal'
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import React from 'react'
-import { style } from '@mui/system'
-
-
-
-const boxstyle = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  height: 400,
-  bgcolor: 'background.paper',
-  border: 'none',
-  boxShadow: 24,
-  p: 4,
-};
 
 const NavBar: NextPage = () => {
-
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   return (
     <div className={styles.navbar}>
